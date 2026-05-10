@@ -45,6 +45,21 @@ const User = sequelize.define(
       type: DataTypes.DATE,
       allowNull: true,
     },
+
+    phone: {
+      type: DataTypes.STRING(20),
+      allowNull: true,
+    },
+
+    address: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
+
+    avatar: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
   },
   {
     tableName: "users",
